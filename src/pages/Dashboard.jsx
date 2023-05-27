@@ -12,6 +12,7 @@ import {
   HStack,
   Button,
   Divider,
+  Avatar,
 } from "@chakra-ui/react";
 import { useLoaderData } from "react-router-dom";
 import { EditIcon, ViewIcon } from "@chakra-ui/icons";
@@ -26,7 +27,7 @@ export default function Dashboard() {
             <Text>
               <Flex gap={5}>
                 <Box h="50px" w="50px">
-                  <Text>AV</Text>
+                  <Avatar src={task.img}></Avatar>
                 </Box>
                 <Box>
                   <Heading as="h3" size="sm">
